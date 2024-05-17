@@ -1,3 +1,4 @@
+//Estos let contienen los id de los div de mi html
 let cuadro1 = document.getElementById("cuadrito1")
 let cuadro2 = document.getElementById("cuadrito2")
 let cuadro3 = document.getElementById("cuadrito3")
@@ -8,65 +9,50 @@ let cuadro7 = document.getElementById("cuadrito7")
 let cuadro8 = document.getElementById("cuadrito8")
 let cuadro9 = document.getElementById("cuadrito9")
 
-let clave1 = true
-let tt = true
 
+//cree un let llamado matriz
+//que contiene mis posiciones o cordenadas de mi cuadro cons los let de arriba
+let matriz = [
+    [cuadro1, cuadro2, cuadro3],
+    [cuadro4, cuadro5, cuadro6],
+    [cuadro7, cuadro8, cuadro9],
+]
+
+let jugador = "O"
+// esta funcion estallamada desde mi index en un div que contine un onclick con el nombre funcio
+// y eso con cada funcion de las 9 que tengo
+//operador ternario
+
+// esto hace que cuando hago click en el posición correspondiente valide que si jugador es igual a o que si lo es que retorne una 
+// y si es x que retorne una o
 function funcion1() {
-    if (clave1 === true) {
-        if (tt === true) {
-            cuadro1.innerHTML = 'X'
-            tt = false;
-        } else {
-            cuadro1.innerHTML = 'O'
-            tt = true;
-        }
-        clave1 = false;
-    } else {
-        console.log(':(');
-    }
-    }
+    matriz[0][0].innerHTML = jugador == "O" ? jugador = "X" : jugador = "O";
 
 
 
-    let clave2 = true
 
 
+}
+
+// esto hace que cuando hago click en el posición correspondiente valide que si jugador es igual a o que si lo es que retorne una 
+// y si es x que retorne una o
 function funcion2() {
-    if (clave2 === true) {
-        if (tt === true) {
-            cuadro2.innerHTML = 'X'
-            tt = false;
-        } else {
-            cuadro2.innerHTML = 'O'
-            tt = true;
-        }
-        clave2 = false;
-    } else {
-        console.log(':(');
-    }
-    }
+
+    matriz[0][1].innerHTML = jugador == "O" ? jugador = "X" : jugador = "O";
 
 
 
 
 
-    let clave3 = true
 
 
+}
+
+// esto hace que cuando hago click en el posición correspondiente valide que si jugador es igual a o que si lo es que retorne una 
+// y si es x que retorne una o
 function funcion3() {
-    if (clave3 === true) {
-        if (tt === true) {
-            cuadro3.innerHTML = 'X'
-            tt = false;
-        } else {
-            cuadro3.innerHTML = 'O'
-            tt = true;
-        }
-        clave3 = false;
-    } else {
-        console.log(':(');
-    }
-    }
+
+    matriz[0][2].innerHTML = jugador == "O" ? jugador = "X" : jugador = "O";
 
 
 
@@ -75,6 +61,79 @@ function funcion3() {
 
 
 
+
+}
+// esto hace que cuando hago click en el posición correspondiente valide que si jugador es igual a o que si lo es que retorne una 
+// y si es x que retorne una o
+function funcion4() {
+
+    matriz[1][0].innerHTML = jugador == "O" ? jugador = "X" : jugador = "O";
+
+
+
+
+
+
+}
+
+// esto hace que cuando hago click en el posición correspondiente valide que si jugador es igual a o que si lo es que retorne una 
+// y si es x que retorne una o
+function funcion5() {
+
+    matriz[1][1].innerHTML = jugador == "O" ? jugador = "X" : jugador = "O"
+
+
+
+
+
+
+}
+
+// esto hace que cuando hago click en el posición correspondiente valide que si jugador es igual a o que si lo es que retorne una 
+// y si es x que retorne una o
+function funcion6() {
+
+    matriz[1][2].innerHTML = jugador == "O" ? jugador = "X" : jugador = "O"
+
+
+
+
+
+}
+
+// esto hace que cuando hago click en el posición correspondiente valide que si jugador es igual a o que si lo es que retorne una 
+// y si es x que retorne una o
+function funcion7() {
+    matriz[2][0].innerHTML = jugador == "O" ? jugador = "X" : jugador = "O"
+
+
+
+
+
+
+
+}
+
+// esto hace que cuando hago click en el posición correspondiente valide que si jugador es igual a o que si lo es que retorne una 
+// y si es x que retorne una o
+function funcion8() {
+
+    matriz[2][1].innerHTML = jugador == "O"  ? jugador = "X": jugador = "O"
+
+
+
+    
+
+}
+
+
+// esto hace que cuando hago click en el posición correspondiente valide que si jugador es igual a o que si lo es que retorne una 
+// y si es x que retorne una o
+function funcion9() {
+   
+    matriz[2][2].innerHTML = jugador == "O" ? jugador = "X": jugador = "O"
+       
+}
 
 
 
