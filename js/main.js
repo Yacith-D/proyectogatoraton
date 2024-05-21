@@ -18,6 +18,34 @@ let matriz = [
     [cuadro7, cuadro8, cuadro9],
 ]
 
+for (let i = 0; i < matriz.length; i++) {
+    console.log("i"+i);
+
+    for (let j = 0; j < matriz[i].length; j++) {
+        console.log("j"+j);
+        console.log(matriz[i][j]);
+        matriz[i][j].addEventListener("click", contieneTodo) 
+                   
+    }
+}
+
+
+
+function contieneTodo(event) {
+    console.log(event.currentTarget);
+    event.currentTarget.innerHTML = jugador == "O" ? jugador = "X" : jugador = "O";
+    fila1(matriz)
+    columna1(matriz)
+    ganar("O")
+    ganar("X")
+}
+
+function ganar(jugador) {
+    if (matriz[0][0].innerHTML == jugador  && matriz[0][1].innerHTML == jugador && matriz[0][2].innerHTML == jugador) {
+        alert("ganaste")
+     }
+}
+
 let jugador = "O"
 // esta funcion estallamada desde mi index en un div que contine un onclick con el nombre funcion
 // y eso con cada funcion de las 9 que tengo
@@ -27,26 +55,25 @@ let jugador = "O"
 // y si es x que retorne una o
 function funcion1() {
     matriz[0][0].innerHTML = jugador == "O" ? jugador = "X" : jugador = "O";
+    // fila1(matriz)
+    // columna1(matriz)
 
-    fila1(matriz)
 }
 
+function fila1(matriz) {            
 
-function fila1(matriz) {
-    let contaX = 0;
-    let contaO = 0;
-    for (let index = 0; index < matriz.length; index++) {
-        if (matriz[0][index] == "X") {
-            contaX++;
-        } else {
-            matriz[0][index] == "O"
-            contaO++;
-        } if (contaO == 3 || contaO == 3) {
-            return true
-        } else {
-            return false
-        }
-    }
+    // for (let index = 0; index < matriz.length; index++) {
+    //     if (matriz[0][index] == "X") {x
+
+    //     } else {
+    //         matriz[0][index] == "O"
+            
+    //     } if (contaO == 3 || contaO == 3) {
+    //         return true
+    //     } else {
+    //         return false
+    //     }
+    // }
 }
 
 // esto hace que cuando hago click en el posición correspondiente valide que si jugador es igual a o que si lo es que retorne una 
@@ -55,17 +82,23 @@ function funcion2() {
 
     matriz[0][1].innerHTML = jugador == "O" ? jugador = "X" : jugador = "O";
     fila2(matriz)
+    columna2(matriz)
 }
 
+
 function fila2(matriz) {
+
     for (let index = 0; index < matriz.length; index++) {
         if (matriz[1][index] == "X") {
-            contaX++;
+           
         } else {
             matriz[1][index] == "O"
-            contaO++;
+            
         }
-
+    } if (contaO == 3 || contaO == 3) {
+        return true
+    } else {
+        return false
     }
 }
 // esto hace que cuando hago click en el posición correspondiente valide que si jugador es igual a o que si lo es que retorne una 
@@ -75,12 +108,22 @@ function funcion3() {
     matriz[0][2].innerHTML = jugador == "O" ? jugador = "X" : jugador = "O";
 
     fila3(matriz)
-
+    columna3(matriz)
 }
 
 function fila3(matriz) {
+
     for (let index = 0; index < matriz.length; index++) {
-        console.log(matriz[2][index]);
+        if (matriz[2][index] == "X") {
+       
+        } else {
+            matriz[2][index] == "O"
+  
+        } if (contaO == 3 || contaO == 3) {
+            return true
+        } else {
+            return false
+        }
 
     }
 }
@@ -91,7 +134,7 @@ function funcion4() {
 
     matriz[1][0].innerHTML = jugador == "O" ? jugador = "X" : jugador = "O";
     columna1(matriz)
-
+    fila1(matriz)
 }
 
 
@@ -101,10 +144,10 @@ function columna1(matriz) {
     let contaO = 0;
     for (let index = 0; index < matriz.length; index++) {
         if (matriz[index][0] == "X") {
-            contaX++;
+          
         } else {
             matriz[index][0] == "0"
-            contaO++;
+     
         }
     } if (contaX == 3 || contaO == 3) {
         return true
@@ -121,17 +164,17 @@ function columna1(matriz) {
 function funcion5() {
 
     matriz[1][1].innerHTML = jugador == "O" ? jugador = "X" : jugador = "O"
-
+    columna2(matriz)
 }
 
 function columna2(matriz) {
 
     for (let index = 0; index < matriz.length; index++) {
         if (matriz[index][1] == "X") {
-            contaX++;
+       
         } else {
             matriz[index][1] == "0"
-            contaO++;
+
         }
     } if (contaX == 3 || contaO == 3) {
         return true
@@ -145,18 +188,18 @@ function columna2(matriz) {
 // esto hace que cuando hago click en el posición correspondiente valide que si jugador es igual a o que si lo es que retorne una 
 // y si es x que retorne una o
 function funcion6(matriz) {
-    matriz[1][2].innerHTML = jugador == "O" ? jugador = "X" : jugador = "O";
+    matriz[1][2].innerHTML = jugador == "O" ? jugador = "X" : jugador = "O"
     columna3(matriz)
 }
-function columna3(matriz) {
 
+function columna3(matriz) {
 
     for (let index = 0; index < matriz.length; index++) {
         if (matriz[index][2] == "X") {
-            contaX++;
+       
         } else {
             matriz[index][2] == "0"
-            contaO++;
+        
         }
     } if (contaX == 3 || contaO == 3) {
         return true
@@ -184,7 +227,7 @@ function fila7(matriz) {
 function funcion8() {
 
     matriz[2][1].innerHTML = jugador == "O" ? jugador = "X" : jugador = "O"
-    fila8(matriz)
+
 
 
 
@@ -196,7 +239,7 @@ function funcion8() {
 function funcion9() {
 
     matriz[2][2].innerHTML = jugador == "O" ? jugador = "X" : jugador = "O"
-    fila9(matriz)
+
 }
 
 
@@ -214,8 +257,6 @@ function funcion9() {
 //         }
 //     }
 // }
-
-
 
 
 
