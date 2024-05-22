@@ -9,59 +9,91 @@ let cuadro7 = document.getElementById("cuadrito7")
 let cuadro8 = document.getElementById("cuadrito8")
 let cuadro9 = document.getElementById("cuadrito9")
 
-
 //cree un let llamado matriz
 //que contiene mis posiciones o cordenadas de mi cuadro cons los let de arriba
 let matriz = [
-    [cuadro1, cuadro2, cuadro3],
-    [cuadro4, cuadro5, cuadro6],
-    [cuadro7, cuadro8, cuadro9],
+   [cuadro1, cuadro2, cuadro3],
+   [cuadro4, cuadro5, cuadro6],
+   [cuadro7, cuadro8, cuadro9],
 ]
 
-for (let i = 0; i < matriz.length; i++) {
-    for (let j = 0; j < matriz[i].length; j++) {
 
-        matriz[i][j].addEventListener("click", contieneTodo) 
-                   
-    }
+
+let jugador = "O"
+
+for (let i = 0; i < matriz.length; i++) {
+   for (let j = 0; j < matriz[i].length; j++) {
+
+      matriz[i][j].addEventListener("click", contieneTodo)
+
+   }
 }
 
 function contieneTodo(event) {
-  
-    event.currentTarget.innerHTML = jugador == "O" ? jugador = "X" : jugador = "O";
-   
-    ganar("O")
-    ganar("X")
+
+   event.currentTarget.innerHTML = jugador == "O" ? jugador = "X" : jugador = "O";
+   ganar("O")
+   ganar("X")
+
+let finalizar = ganar("X")
+
+   let contadorEmpate = 0;
+
+   for (let i = 0; i < matriz.length; i++) {
+      for (let j = 0; j < matriz.length; j++) {
+         matriz[i][j].textContent != " "
+         contadorEmpate++;
+      }
+   }
+
+
+
 }
+
+
 
 function ganar(jugador) {
-    if (matriz[0][0].innerHTML == jugador  && matriz[0][1].innerHTML == jugador && matriz[0][2].innerHTML == jugador) {
-        alert("ganaste")
-     }
-     if (matriz[1][0].innerHTML == jugador  && matriz[1][1].innerHTML == jugador && matriz[1][2].innerHTML == jugador) {
-        alert("ganaste")
-     }
-     if (matriz[2][0].innerHTML == jugador  && matriz[2][1].innerHTML == jugador && matriz[2][2].innerHTML == jugador) {
-        alert("ganaste")
-     }
-     if (matriz[0][0].innerHTML == jugador  && matriz[1][1].innerHTML == jugador && matriz[2][2].innerHTML == jugador) {
-        alert("ganaste")
-     }
-     if (matriz[0][2].innerHTML == jugador  && matriz[1][1].innerHTML == jugador && matriz[2][0].innerHTML == jugador) {
-        alert("ganaste")
-     }
-     if (matriz[0][0].innerHTML == jugador  && matriz[1][0].innerHTML == jugador && matriz[2][0].innerHTML == jugador) {
-        alert("ganaste")
-     }
-     if (matriz[0][1].innerHTML == jugador  && matriz[1][1].innerHTML == jugador && matriz[2][1].innerHTML == jugador) {
-        alert("ganaste")
-     }
-     if (matriz[0][2].innerHTML == jugador  && matriz[1][2].innerHTML == jugador && matriz[2][2].innerHTML == jugador) {
-        alert("ganaste")
-     }
+   if (matriz[0][0].innerHTML == jugador && matriz[0][1].innerHTML == jugador && matriz[0][2].innerHTML == jugador) {
+      alert("ganaste")
+   }
+   if (matriz[1][0].innerHTML == jugador && matriz[1][1].innerHTML == jugador && matriz[1][2].innerHTML == jugador) {
+      alert("ganaste")
+   }
+   if (matriz[2][0].innerHTML == jugador && matriz[2][1].innerHTML == jugador && matriz[2][2].innerHTML == jugador) {
+      alert("ganaste")
+   }
+   if (matriz[0][0].innerHTML == jugador && matriz[1][1].innerHTML == jugador && matriz[2][2].innerHTML == jugador) {
+      alert("ganaste")
+   }
+   if (matriz[0][2].innerHTML == jugador && matriz[1][1].innerHTML == jugador && matriz[2][0].innerHTML == jugador) {
+      alert("ganaste")
+   }
+   if (matriz[0][0].innerHTML == jugador && matriz[1][0].innerHTML == jugador && matriz[2][0].innerHTML == jugador) {
+      alert("ganaste")
+   }
+   if (matriz[0][1].innerHTML == jugador && matriz[1][1].innerHTML == jugador && matriz[2][1].innerHTML == jugador) {
+      alert("ganaste")
+   }
+   if (matriz[0][2].innerHTML == jugador && matriz[1][2].innerHTML == jugador && matriz[2][2].innerHTML == jugador) {
+      alert("ganaste")
+   }
+   return false
+  
 }
 
-let jugador = "O"
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
