@@ -32,15 +32,15 @@ let matriz = [
 ]
 
 
-
+let ganadorO = "X "
 let jugador = "O"
 
 // un for que itera mis filas y columnas como un array y da posiciones a mis cuadros
 for (let i = 0; i < matriz.length; i++) {
    for (let j = 0; j < matriz[i].length; j++) {
-       //aqui un evento click que hace que cuando toque mis cuadros se realize un evento
+      //aqui un evento click que hace que cuando toque mis cuadros se realize un evento
       matriz[i][j].addEventListener("click", contieneTodo)
-        
+
    }
 }
 //esta funcion que contiene todos mis 9 cuadros en una funcion
@@ -49,25 +49,25 @@ function contieneTodo(event) {
    event.currentTarget.innerHTML = jugador == "O" ? jugador = "X" : jugador = "X";
    ganar("O")
    ganar("X")
-// un if que contiene  mi funciojn enmpate con un settimeout para que no mueste la alerta antes del click
+   // un if que contiene  mi funciojn enmpate con un settimeout para que no mueste la alerta antes del click
    if (empate()) {
       setTimeout(() => {
          alert("empate")
       }, 200);
    }
-  //esta es el nombre de mi funcion que hace que funcione la maquina
+   //esta es el nombre de mi funcion que hace que funcione la maquina
    maquina(cuadritos)
 }
 
+let ganador1 = false 
+
+
 // Esta funcion ganar contiene todas mis validaciones para realizar loa ganes en columna y diagonal                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            fila y diagonal
 function ganar(jugador) {
-   //esta es mi funcion empate, valida mi empate
-   if (empate() == false) {
-
-   }
+   
+      
    if (matriz[0][0].innerHTML == jugador && matriz[0][1].innerHTML == jugador && matriz[0][2].innerHTML == jugador) {
       alert("ganaste")
-
    }
    if (matriz[1][0].innerHTML == jugador && matriz[1][1].innerHTML == jugador && matriz[1][2].innerHTML == jugador) {
       alert("ganaste")
@@ -90,8 +90,15 @@ function ganar(jugador) {
    if (matriz[0][2].innerHTML == jugador && matriz[1][2].innerHTML == jugador && matriz[2][2].innerHTML == jugador) {
       alert("ganaste")
    }
+   if (empate() == true) {
+      return
+   }
 
 }
+
+
+
+
 // esta es la funcion que hace que ralize en empate
 function empate() {
    for (let cuadro of cuadritos) {
@@ -104,20 +111,29 @@ function empate() {
 //Aqui una funcion que hace que la maquina juegue y envio a cuadritos como parametros 
 //un if que hace que si cuadritos es diferente o igual a nada
 //unfor que me itere de o a 1000, creo una varible nueva que hace que la maquina haga click en las posiciones vacias%
-//
+
 function maquina(cuadritos) {
    if (cuadritos !== "") {
       for (let index = 0; index < 1000; index++) {
          let maquinabrr = Math.floor(Math.random() * 9)
          if (cuadritos[maquinabrr].textContent === "") {
-         //    setTimeout(() => {
-         //       cuadritos[maquinabrr].innerHTML = "O"
-         //    }, 300);
-         //    break
+            setTimeout(() => {
+               cuadritos[maquinabrr].innerHTML = "O"
+            }, 300);
+            break
          }
       }
    }
 }
+
+
+
+
+
+
+
+
+
 
 
 
