@@ -27,7 +27,7 @@ let fin = false;
 for (let i = 0; i < matriz.length; i++) {
    for (let j = 0; j < matriz[i].length; j++) {
       matriz[i][j].addEventListener("click", contieneTodo);
-      
+      console.log(matriz);
    }
 }
 // esta funcion hace que se le pongan eventos a mis cuadros contiene a maquina para que juege la compu y funcion ganar para que valide las posiciones del gane
@@ -46,66 +46,66 @@ function contieneTodo(event) {
 
 function ganar(jugador) {
 
-   console.log(matriz)
    if (
       matriz[0][0].innerHTML === jugador &&
       matriz[0][1].innerHTML === jugador &&
       matriz[0][2].innerHTML === jugador
    ) {
-      alert("¡Ganaste!");
+      alert("¡ganaste!");
       fin = true;
    } else if (
       matriz[1][0].innerHTML === jugador &&
       matriz[1][1].innerHTML === jugador &&
       matriz[1][2].innerHTML === jugador
    ) {
-      alert("¡Ganaste!");
+      alert("¡ganaste!");
       fin = true;
    } else if (
       matriz[2][0].innerHTML === jugador &&
       matriz[2][1].innerHTML === jugador &&
       matriz[2][2].innerHTML === jugador
    ) {
-      alert("¡Ganaste!");
+      alert("¡ganaste!");
       fin = true;
    } else if (
       matriz[0][0].innerHTML === jugador &&
       matriz[1][1].innerHTML === jugador &&
       matriz[2][2].innerHTML === jugador
    ) {
-      alert("¡Ganaste!");
+      alert("¡ganaste!");
       fin = true;
    } else if (
       matriz[0][2].innerHTML === jugador &&
       matriz[1][1].innerHTML === jugador &&
       matriz[2][0].innerHTML === jugador  
    ) {
-      alert("¡perdiste!");
+      alert("¡ganaste!");
       fin = true;
    } else if (
       matriz[0][0].innerHTML === jugador &&
       matriz[1][0].innerHTML === jugador &&
       matriz[2][0].innerHTML === jugador
    ) {
-      alert("¡perdiste!");
+      alert("¡ganaste!");
       fin = true;
    } else if (
       matriz[0][1].innerHTML === jugador &&
       matriz[1][1].innerHTML === jugador &&
       matriz[2][1].innerHTML === jugador
    ) {
-      alert("¡perdiste!");
+      alert("¡ganaste!");
       fin = true;
    } else if (
       matriz[0][2].innerHTML === jugador &&
       matriz[1][2].innerHTML === jugador &&
       matriz[2][2].innerHTML === jugador
    ) {
-      alert("¡perdiste!");
+      alert("¡ganaste!");
       fin = true;
    } 
+  
     else if (empate(matriz)) {
-      alert("¡Empate!");
+      alert("empate");
       fin = true;
    }
        

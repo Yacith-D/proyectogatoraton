@@ -19,6 +19,8 @@ margin-top: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
+ background-color: rgb(255, 255, 255);
+    opacity: 0.7;
 
 }
 
@@ -29,6 +31,8 @@ margin-top: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(255, 255, 255);
+   
 
 } 
 
@@ -38,7 +42,9 @@ margin-top: 10%;
     text-align: center;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; background-color: rgb(255, 255, 255);
+    opacity: 0.7;
+
 
 }
 
@@ -49,6 +55,9 @@ margin-top: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
+     background-color: rgb(255, 255, 255);
+    
+
 
 }
 
@@ -59,6 +68,9 @@ margin-top: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
+     background-color: rgb(255, 255, 255);
+    opacity: 0.7;
+
 
 }
 
@@ -69,6 +81,9 @@ margin-top: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
+     background-color: rgb(255, 255, 255);
+ 
+
 
 }
 
@@ -78,7 +93,10 @@ margin-top: 10%;
     text-align: center;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
+    background-color: rgb(255, 255, 255);
+    opacity: 0.7;
+
  
 }
 
@@ -89,6 +107,8 @@ margin-top: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(255, 255, 255);
+  
 
 }
 
@@ -99,6 +119,8 @@ margin-top: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
+ background-color: rgb(255, 255, 255);
+    opacity: 0.7;
 
 }
 
@@ -125,9 +147,15 @@ margin-top: 160px;
 font-size: 70px;
 margin-left: 34%;
 color: aliceblue;
-box-shadow: 0px 0px 40px;
+
 
 }
 
+#yoshi{
+height: 30px;
+width:40px ;
+
+
+}
 
 
