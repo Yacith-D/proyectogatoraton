@@ -2,18 +2,18 @@
 
 .contieneCuadros{
 display: grid;
-width: 500px;
+width: 2px;
 grid-template-columns:repeat(3, 100px) ;
 grid-template-rows: repeat(3,100px);
-border: 2px solid black;
-margin-left: 25%;
-
+border: 2px solid transparent;
+margin-left: 40%;
+margin-top: 10%;
 
 }
 
 
 #cuadrito1{
-    border: solid 2px rgb(9, 9, 9);
+    border: solid 2px rgb(255, 255, 255);
     border-radius: 10px;
     text-align: center;
     display: flex;
@@ -23,17 +23,17 @@ margin-left: 25%;
 }
 
 #cuadrito2{
-    border: solid 2px rgb(0, 0, 0);
+    border: solid 2px rgb(255, 255, 255);
     border-radius: 10px;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
 
-}
+} 
 
 #cuadrito3{
-    border: solid 2px rgb(0, 0, 0);
+    border: solid 2px rgb(255, 255, 255);
     border-radius: 10px;
     text-align: center;
     display: flex;
@@ -43,7 +43,7 @@ margin-left: 25%;
 }
 
 #cuadrito4{
-    border: solid 2px rgb(0, 0, 0);
+    border: solid 2px rgb(255, 255, 255);
     border-radius: 10px;
     text-align: center;
     display: flex;
@@ -53,7 +53,7 @@ margin-left: 25%;
 }
 
 #cuadrito5{
-    border: solid 2px black;
+    border: solid 2px rgb(255, 255, 255);
     border-radius: 10px;
     text-align: center;
     display: flex;
@@ -63,7 +63,7 @@ margin-left: 25%;
 }
 
 #cuadrito6{
-    border: solid 2px black;
+    border: solid 2px rgb(255, 255, 255);
     border-radius: 10px;
     text-align: center;
     display: flex;
@@ -73,7 +73,7 @@ margin-left: 25%;
 }
 
 #cuadrito7{
-    border: solid 2px black;
+    border: solid 2px rgb(255, 255, 255);
     border-radius: 10px;
     text-align: center;
     display: flex;
@@ -83,7 +83,7 @@ margin-left: 25%;
 }
 
 #cuadrito8{
-    border: solid 2px black;
+    border: solid 2px  rgb(255, 255, 255);
     border-radius: 10px;
     text-align: center;
     display: flex;
@@ -93,7 +93,7 @@ margin-left: 25%;
 }
 
 #cuadrito9{
-    border: solid 2px rgb(255, 0, 0);
+    border: solid 2px  rgb(255, 255, 255) ;
     border-radius: 10px;
     text-align: center;
     display: flex;
@@ -103,11 +103,31 @@ margin-left: 25%;
 }
 
 
+.videoFondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que el video cubra toda la pantalla */
+    z-index: -1; /*Coloca el video detrás del contenido*/
+}
+
+#musica{
+height: 20px;
+width: 230px;
 
 
+margin-top: 160px;
+}
 
+#titulo{
+font-size: 70px;
+margin-left: 34%;
+color: aliceblue;
+box-shadow: 0px 0px 40px;
 
-
+}
 
 
 
