@@ -19,9 +19,11 @@ margin-top: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
- background-color: rgb(255, 255, 255);
+ background-color: rgb(255, 0, 0);
     opacity: 0.7;
-
+    color: rgb(30, 255, 0);
+    font-size: 40px;
+  
 }
 
 #cuadrito2{
@@ -31,8 +33,12 @@ margin-top: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(255, 255, 255);
-   
+    background-color: rgb(255, 0, 0);
+    opacity: 0.7;
+
+    color: rgb(30, 255, 0);
+    font-size: 40px;
+  
 
 } 
 
@@ -42,9 +48,12 @@ margin-top: 10%;
     text-align: center;
     display: flex;
     justify-content: center;
-    align-items: center; background-color: rgb(255, 255, 255);
+    align-items: center;
+    background-color: rgb(255, 0, 0);
     opacity: 0.7;
-
+    color: rgb(30, 255, 0);
+    font-size: 40px;
+  
 
 }
 
@@ -55,7 +64,11 @@ margin-top: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
-     background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+    opacity: 0.7;
+    color: rgb(30, 255, 0);
+    font-size: 40px;
+  
     
 
 
@@ -68,8 +81,11 @@ margin-top: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
-     background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
     opacity: 0.7;
+    color: rgb(30, 255, 0);
+    font-size: 40px;
+  
 
 
 }
@@ -81,7 +97,11 @@ margin-top: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
-     background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+    opacity: 0.7;
+    color: rgb(30, 255, 0);
+    font-size: 40px;
+  
  
 
 
@@ -94,8 +114,11 @@ margin-top: 10%;
     display: flex;
     justify-content: center;
     align-items: center; 
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
     opacity: 0.7;
+    color: rgb(30, 255, 0);
+    font-size: 40px;
+  
 
  
 }
@@ -107,7 +130,10 @@ margin-top: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+    opacity: 0.7;
+    color: rgb(30, 255, 0);
+    font-size: 40px;
   
 
 }
@@ -119,8 +145,11 @@ margin-top: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
- background-color: rgb(255, 255, 255);
-    opacity: 0.7;
+    background-color: rgb(255, 0, 0);
+    opacity: 0.8;
+    color: rgb(30, 255, 0);
+    font-size: 40px;
+  
 
 }
 
